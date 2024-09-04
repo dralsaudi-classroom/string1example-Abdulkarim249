@@ -39,7 +39,7 @@ public class String1 {
 	    return true;
     }
     public void reverse() {
-	    for(int i=str.length()-1;i>=0;i--)
+	    for(int i=str.length();i>=0;i--)
 		    System.out.print(str[i]);
 	     System.out.print("\n");	    
     }
