@@ -29,17 +29,17 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
-    public boolean equal(String1 s) {
-	    if(str.length!=s.length())
+     public boolean equal(String1 s) {
+	    if(length()!=s.length())
 		    return false;
 	    else
-		    for(int i=0;i<str.length;i++)
-			    if(!(str[i]!=s.getChar(i)))
+		    for(int i=0;i<length();i++)
+			    if((getChar(i)!=s.getChar(i)))
 				    return false;
 	    return true;
     }
     public void reverse() {
-	    for(int i=str.length;i>=0;i--)
+	    for(int i=length()-1;i>=0;i--)
 		    System.out.print(str[i]);
 	     System.out.print("\n");	    
     }
