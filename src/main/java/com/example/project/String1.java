@@ -39,8 +39,12 @@ public class String1 {
 	    return true;
     }
     public void reverse() {
-	    for(int i=length()-1;i>=0;i--)
-		    System.out.print(str[i]);
-	     System.out.print("\n");	    
+        char temp;
+	    for(int i=0,j=length()-1;i<length()/2;i++,j--){
+		   temp=str[j];
+                   str[j]=str[i];
+                   str[i]=temp;
+                 
+    }
     }
 }
